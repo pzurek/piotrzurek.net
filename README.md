@@ -1,0 +1,4 @@
+piotrzurek.net
+==============
+
+my blog
