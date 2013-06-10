@@ -65,6 +65,10 @@ li {
 	list-style: none;
 }
 
+.addressList li {
+	padding-right: 3px;
+}
+
 .dutyList {
 	list-style: circle;
 }
