@@ -1,0 +1,103 @@
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+table {
+	width: 100%;
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+
+p {
+	padding: 3px;
+}
+
+tbody {
+	margin: 0;
+	padding: 0;
+}
+
+tr {
+	margin: 0;
+	padding: 0;
+}
+
+td {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	margin-top: 3px; 
+	margin-bottom: 3px; 
+}
+
+li {
+	font-size: smaller;
+}
+
+.activities {
+	margin: 0px;
+	padding: 3px;
+}
+
+.container {
+	width: 800px;
+	margin: auto;
+}
+
+.cvHeading {
+	font-family: 'Special Elite', cursive;
+	font-weight: bolder;
+	font-size: 1.4em;
+	vertical-align: top;
+	width: 140px;
+	border-right: 1px solid gray;
+}
+
+.topicTable {
+}
+
+.addressList {
+	text-align: right;
+	list-style: none;
+}
+
+.dutyList {
+	list-style: circle;
+}
+
+.jobTable {
+	width: 100%;
+}
+
+.company {
+	text-align: right;
+	font-weight: bolder;
+}
+
+.timeSpan {
+	text-align: right;
+	font-size: smaller;
+	font-style: italic;
+}
+
+.position {
+	font-weight: bolder;
+	font-style: italic;
+	vertical-align: top;
+	width: available;
+}
+
+.bottomBorder {
+	border-bottom: 1px solid gray;
+}
+
+.bottomBorderLight {
+	border-bottom: 1px solid lightgray;
+}
+
+.jobTable {
+}
