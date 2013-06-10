@@ -88,6 +88,12 @@ li {
 	font-style: italic;
 }
 
+.location {
+	text-align: right;
+	font-size: smaller;
+	font-style: italic;
+}
+
 .position {
 	font-weight: bolder;
 	font-style: italic;
