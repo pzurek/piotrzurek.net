@@ -14,8 +14,8 @@ html, body { height: 100%; }
 
 body {
   background-color: #FFF;
-  font: 16px "museo-sans", Helvetica, Arial, sans-serif;
-  font-size: small;
+  font-family: "museo-sans", Helvetica, Arial, sans-serif;
+  font-size: normal;
   text-align: center;
 }
 
