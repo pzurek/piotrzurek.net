@@ -1,7 +1,7 @@
 body {
 	font-family: 'museo-sans', serif;
-	font-size: 18px;
-	line-height: 22px;
+	font-size: 21px;
+	line-height: 24px;
 	margin: 0;
 	padding: 0;
 }
@@ -37,7 +37,6 @@ ul {
 }
 
 li {
-	font-size: smaller;
 }
 
 .activities {
