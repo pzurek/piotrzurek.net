@@ -49,10 +49,11 @@ li {
 
 .cvHeading {
 	font-family: "ff-enzo-web", cursive;
-	font-weight: bolder;
+	font-weight: 300;
 	font-size: 1.4em;
 	vertical-align: top;
 	width: 140px;
+	color: darkgray;
 	border-right: 1px solid gray;
 }
 
