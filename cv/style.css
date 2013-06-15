@@ -1,7 +1,5 @@
 body {
 	font-family: 'museo-sans', serif;
-	font-size: 21px;
-	line-height: 24px;
 	margin: 0;
 	padding: 0;
 }
@@ -13,7 +11,7 @@ table {
 }
 
 p {
-	padding: 3px;
+	padding: 7px;
 }
 
 tbody {
@@ -32,8 +30,8 @@ td {
 }
 
 ul {
-	margin-top: 3px; 
-	margin-bottom: 3px; 
+	margin-top: 7px; 
+	margin-bottom: 7px; 
 }
 
 li {
@@ -41,7 +39,7 @@ li {
 
 .activities {
 	margin: 0px;
-	padding: 3px;
+	padding: 7px;
 }
 
 .container {
@@ -67,7 +65,7 @@ li {
 }
 
 .addressList li {
-	padding-right: 3px;
+	padding-right: 7px;
 }
 
 .dutyList {
@@ -87,12 +85,24 @@ li {
 	text-align: right;
 	font-size: smaller;
 	font-style: italic;
+	color: gray;
+}
+
+.timeSpan p {
+	padding-top: 2px;
+	padding-bottom: 2px;
 }
 
 .location {
 	text-align: right;
 	font-size: smaller;
 	font-style: italic;
+	color: gray;
+}
+
+.location p {
+	padding-top: 2px;
+	padding-bottom: 2px;
 }
 
 .position {
