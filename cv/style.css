@@ -8,6 +8,7 @@ table {
 	width: 100%;
 	border-spacing: 0px;
 	border-collapse: collapse;
+	line-height: 1.5em;
 }
 
 p {
@@ -92,6 +93,7 @@ li {
 .timeSpan p {
 	padding-top: 2px;
 	padding-bottom: 2px;
+	line-height: 1.2em;
 }
 
 .location {
@@ -104,6 +106,7 @@ li {
 .location p {
 	padding-top: 2px;
 	padding-bottom: 2px;
+	line-height: 1.2em;
 }
 
 .position {
