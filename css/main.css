@@ -74,6 +74,7 @@ ul.posts span {
 }
 
 .site .header h1.title {
+  font-family: "ff-enzo-web",sans-serif;
   display: inline-block;
   margin-bottom: 2em;
 }
@@ -93,6 +94,10 @@ ul.posts span {
 
 .site .header a.extra:hover {
   color: #000;
+}
+
+.site .header a.subtitle {
+  font-family: "ff-enzo-web",sans-serif;
 }
 
 .site .meta {
