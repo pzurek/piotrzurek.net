@@ -73,9 +73,9 @@ ul.posts span {
 }
 
 .site .header h1.title {
+  font-size: 2.8em;
   font-family: "ff-enzo-web",sans-serif;
   font-weight: 300;
-  margin-bottom: 2em;
 }
 
 .site .header h1.title a {
