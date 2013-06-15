@@ -79,7 +79,7 @@ ul.posts span {
 }
 
 .site .header h1.title a {
-  color: #a00;
+  color: #0066cc;
 }
 
 .site .header h1.title a:hover {
@@ -87,7 +87,7 @@ ul.posts span {
 }
 
 .site .header a.extra {
-  color: #aaa;
+  color: #004d99;
   margin-left: 1em;
 }
 
@@ -100,12 +100,12 @@ ul.posts span {
 }
 
 .site .meta {
-  color: #aaa;
+  color: #004d99;
 }
 
 .site .footer {
   font-size: 80%;
-  color: #666;
+  color: #004d99;
   border-top: 4px solid #eee;
   margin-top: 2em;
   overflow: hidden;
@@ -117,7 +117,7 @@ ul.posts span {
 }
 
 .site .footer .contact a {
-  color: #8085C1;
+  color: #004d99;
 }
 
 .site .footer .rss {
