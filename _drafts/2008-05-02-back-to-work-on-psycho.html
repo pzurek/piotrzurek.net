@@ -1,0 +1,28 @@
+---
+layout: post
+title: Back to work... on Psycho
+tags:
+- Blog entries
+- development
+- free and open source software
+- Psycho
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '1'
+---
+A few weeks ago I have noticed a lot of traffic on the <a href="http://www.psycho-project.org">Psycho</a> website. A quick look at referring sites showed me that it's all coming from the <a href="http://live.gnome.org/SummerOfCode2008/Ideas">Gnome page of Google Summer of Code ideas</a>. Some kind soul has mentioned <a href="http://www.psycho-project.org">Psycho</a> in the mind mapping proposal. Turns out that increased traffic on my website was the only positive outcome of that proposal. For some reason it was not picked us as SoC project. That was one of the things that made me decide to seriously get back to work on Psycho. It's haunting me all the time anyway so I can just as well put the constant thinking about it to a good use and get into a usable state. As a part of that resolution I have decided to spend at least an hour a day hacking. We'll see how that goes. The important thing is that I have also decided to rewrite the whole thing, although rewrite is probably not the best word here. It would mean that something valuable was already written... :-) Anyway, I'm starting from scratch and that should provide me with some additional motivation as I have a lot of new ideas that I'm going to be very eager to try.
+<ul>
+	<li><strong>Complete separation of data and its visual presentation.</strong>
+Last time round the main object (Topic) was based on Gtk.Widget which didn't really make a lot of sense. Even though it was using the MVC framework the data was still tightly coupled with the with. That will change and thanks to that it should be possible to write different frontends, not necessairly based on Gtk.</li>
+	<li><strong>Mind map widget as a separate Gtk# library.</strong>
+The first reason for that is the same as above but there are some additional benefits. I'll try to make that library usable for others so maybe someone will be able to use it in some other projects. A mind map is an amazing way of visualizing all sorts of data so someone may find it useful. Beside it I was inspired by the amazing work that <a href="http://abock.org/">Aaron Bockover</a> has done on his <a href="http://abock.org/2007/06/27/my-hack-week-the-new-banshee/">ListView</a> widget and <a href="http://banshee-project.org/Main_Page">Banshee</a> in general.</li>
+	<li><strong>Using MonoDevelop and Linux as primary development environment.</strong>
+I decided that it's time to put my money... er... my freedom, where my mouth is. I'm complaining about being stuck on Windows all the time and still I'm choosing to use it when nobody forces me to. Of course the biggest factor here is the amazing progress happening in <a href="http://monodevelop.org/Main_Page">MonoDevelop</a> which actually makes it possible.</li>
+	<li><strong>Using Git for local source code management.</strong>
+Well, just being trendy here... I'm using Git-svn to communicate with the Google Code SVN repository. I'm actually playing with it so much that most of my commits have around 2 lines. It's better to commit too often than not often enough, right?</li>
+	<li><strong>Supporting Mono.Addins right from the start.</strong>
+That's just something that I'm considering right now. It would be cool to enable other people to easily enhance Psycho's functionality, but first I need learn how to do it. I guess it should be easier if I start doing that right from the start of the rewrite.</li>
+</ul>
+OK, so as you can see I have a lot of plans and I certainly didn't abandon the project. As usual, some help would be nice. I have a lot of questions and doubts that someone experienced could easily answer. Without those answers I'm wasting a lot of time and I get very frustrated sometimes not being able to progress as fast as I would like to. So, if you were going to mentor a project for Google SoC but it wasn't accepted, I could really use your help. Especially if you know a thing or two about Gtk(#) and cairo. Please.

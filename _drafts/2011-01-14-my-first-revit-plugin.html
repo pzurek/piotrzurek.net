@@ -1,0 +1,38 @@
+---
+layout: post
+title: My first Revit plugin
+tags:
+- Autodesk
+- Blog entries
+- development
+- programming
+- Revit
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '1'
+  _wp_old_slug: ''
+---
+<em><strong>Update:</strong> The post had to be redacted for the sake of our relationship with the customer. They feel some of their exclusive IP was made public so I removed all reference to data/screenshots that is not publicly available elsewhere - in this case mostly at <a href="http://thebuildingcoder.typepad.com">Building Coder</a> blog.
+</em>
+A few months ago I got the opportunity to do some programming for reasons other than curiosity or fun. A bunch of clever guys came up with a few ideas on how to improve their Revit workflow and they asked us to translate those ideas into code.
+
+<strong>The problem</strong>
+Before I explain what the plug-in does I should take a step back and show what problem it is trying to solve. <a href="http://revitclinic.typepad.com">Revit Clinic</a> touches on that in a bit more detail <a href="http://revitclinic.typepad.com/my_weblog/2010/03/sort-order-referencing-sheet-parameters-dependent-views.html">here</a>, but the short version is that the "Referencing Sheet" parameter always references the first view in which the given section appears. If there are dozens or hundreds of views, hiding the section tag in all but the one that you want, may be a very time consuming and tedious task.
+
+<strong>The solution</strong>
+Quite simple really but unfortunately the details are confidential...
+
+<strong>The workaround</strong>
+When I wrote the first version of that plug-in, it all worked great except for one small part. The problem was that the "Referencing Sheet" parameter was not updated automatically as it should happen - clearly a bug in Revit. Fortunately, the guys at ADN were able to suggest a workaround. A simple trick - changing the discipline of the section view and then bringing it back to what it was originally. Everything within the same transaction! I was quite surprised that it worked but it did so that's what counts. Here's a snippet of the code that does that.
+
+<script src="https://gist.github.com/778928.js?file=UpdateReferencingSheet.cs"></script>
+
+<strong> </strong>
+
+<strong>Shameless plug</strong>
+I've had tons of fun developing that plug-in and I wouldn't mind repeating that experience. In fact, I have already created a few other Revit plug-ins and looking forward to creating some more in the future. If you or your company has an idea for a Revit plug-in that would make your life easier let us know through the comment in this blog - I won't publish those comments to keep your inquiries private.
+
+<strong>The thanks</strong>
+Big "Thank you" goes to <a href="http://thebuildingcoder.typepad.com/">Jeremy Tammik</a> and the rest of the AEC DevTech team at <a href="http://adn.autodesk.com/">ADN</a>. The level of support they provide is amazing and that was a very big part of why I enjoyed working on that plug-in.

@@ -1,0 +1,19 @@
+---
+layout: post
+title: PhotoMapper's inaccurate goodness
+tags:
+- Blog entries
+- GPS
+- Photo
+status: publish
+type: post
+published: true
+meta: {}
+---
+<a href="http://www.flickr.com/photos/piotrzurek/520536130/" title="photo sharing"><img src="http://farm1.static.flickr.com/250/520536130_a2de8964a5_m.jpg" style="border: 1px solid #000000" /></a>
+<span style="font-size: 0.9em; margin-top: 0px"><a href="http://www.flickr.com/photos/piotrzurek/520536130/">PhotoMapper goodness</a>
+Originally uploaded by <a href="http://www.flickr.com/people/piotrzurek/">piotr zurek</a>.
+</span>
+<a href="http://software.copiks.se/photomapper/index.php?lang=EN">PhotoMapper</a> is a nice little free (GPL) application that allows you to geotag your photos and export them in a .kmz file for use in <a href="http://earth.google.com/">Google Earth</a>. It's all cool but if you import <a href="http://www.piotrzurek.net/2007/05/21/my-first-geotagged-photos/">previously</a> <a href="http://www.di-gps.com/di-GPS/n2.htm">geotagged</a> <a href="http://www.flickr.com/photos/piotrzurek/tags/geotagged/">photos</a> it rounds up the coordinates and loses the accuracy. As you can see in the table all the photo seem to have their geotag at 36 50 00.00 S 174 44 00.0000 E when really it should be 36 50 27.60 S 174 43 54.60 E. I hope that it's a small bug that can be easily fixed and since <a href="http://software.copiks.se/photomapper/index.php?lang=EN">PhotoMapper</a> is open source it should happen pretty soon. Unfortunately I don't know C++ in which it's written so I can't help here.
+
+It would be nice if someone ported it to Linux/Gtkmm or maybe just created a plugin like that for <a href="http://f-spot.org/Main_Page">F-spot</a>. I can't understand why <a href="http://picasa.google.com/">Picasa</a> doesn't offer that functionality. It would make so much sens.

@@ -1,3 +1,21 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700);
+
+@font-face {
+  font-family: 'SketchSolid';
+  src: url('s.eot');
+  src: url('s.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SketchOutline';
+  src: url('o.eot');
+  src: url('o.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /*****************************************************************************/
 /*
 /* Common
@@ -13,28 +31,31 @@
 html, body { height: 100%; }
 
 body {
-  background-color: #FFF;
-  font-family: "museo-sans", Helvetica, Arial, sans-serif;
-  font-size: normal;
-  text-align: center;
+  color: #16161D;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-size: 100%; }
 
-h1 { margin-bottom: 1em; }
-p { margin: 1em 0; }
+  h1 {
+    margin-top: 0.28em;
+    margin-bottom: 0.28em;
+  }
 
-a         { color: #00a; }
-a:hover   { color: #000; }
-a:visited { color: #a0a; }
+  p { margin: 1em 0; }
 
-table {
-  font-size: inherit;
-  font: 100%;
-}
+  a         { color: #16161D; }
+  a:hover   { color: #16161D; }
+  a:visited { color: #16161D; }
 
-/*****************************************************************************/
+  table {
+    font-size: inherit;
+  }
+
+  /*****************************************************************************/
 /*
 /* Home
 /*
@@ -50,7 +71,6 @@ ul.posts li {
 
 ul.posts span {
   color: #aaa;
-  font-family: Monaco, "Courier New", monospace;
   font-size: 80%;
 }
 
@@ -64,44 +84,92 @@ ul.posts span {
   font-size: 115%;
   text-align: justify;
   width: 42em;
-  margin: 3em auto 2em;
-  line-height: 1.5em;
+  margin: auto;
+  line-height: 1.4em;
+}
+
+.header {
+  margin-top:    1em;
+  margin-bottom: 1.4em;
+  position: relative;
 }
 
 .site .header a {
   text-decoration: none;
+  display: inline;
+  text-align: right;
+}
+
+.site .header a:hover{
+    color: #2f4d87;
 }
 
 .site .header h1.title {
+  width: 100%;
+  display: inline;
+  color: dimgray;
   font-size: 2.8em;
-  font-family: "ff-enzo-web",sans-serif;
-  font-weight: 300;
+  font-style: normal;
+  font-weight: 100;
 }
 
 .site .header h1.title a {
-  color: #0066cc;
 }
 
 .site .header h1.title a:hover {
-  color: #000;
+  color: #2f4d87;
+}
+
+.site .header h1.title a:visited {
+  color: dimgray;
 }
 
 .site .header a.extra {
-  color: #004d99;
   margin-left: 1em;
 }
 
 .site .header a.extra:hover {
-  color: #000;
+  color: #2f4d87;
 }
 
-.site .header a.subtitle {
-  font-family: "ff-enzo-web",sans-serif;
+.site .header div.subtitle {
+  float: right;
+  text-align: right;
+  display: inline;
+  bottom: 0;
+  right: 0;
+  position: absolute;
 }
 
 .site .meta {
-  color: #004d99;
+  color: #2f4d87;
 }
+
+.site .date {
+  color: #2f4d87;
+  display: inline;
+  text-align: right;
+  float: right;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.site .post-header {
+  margin-bottom: 1em;
+}
+
+.site .post-title {
+  display: inline;
+  font-size: 21px;
+  text-decoration: none;
+}
+
+.site .post-title a:hover {
+  color: #2f4d87;
+}
+
+
 
 .site .footer {
   font-size: 80%;
@@ -117,7 +185,6 @@ ul.posts span {
 }
 
 .site .footer .contact a {
-  color: #004d99;
 }
 
 .site .footer .rss {
@@ -130,6 +197,16 @@ ul.posts span {
   border: 0;
 }
 
+.sketch-solid {
+  font-family: "SketchOutline";
+  color: dimgray;
+}
+
+.sketch-outline {
+  font-family: "SketchOutline";
+  color: lightgray;
+}
+
 /*****************************************************************************/
 /*
 /* Posts
@@ -138,8 +215,10 @@ ul.posts span {
 
 /* standard */
 #post pre {
+  line-height: 1.4em;
+  font-size: 14px;
   border: 1px solid #ddd;
-  background-color: #eef;
+  background-color: #002b36;
   padding: 0 .4em;
 }
 
@@ -149,7 +228,7 @@ ul.posts span {
 
 #post code {
   border: 1px solid #ddd;
-  background-color: #eef;
+  background-color: #002b36;
   padding: 0 .2em;
 }
 
@@ -160,10 +239,22 @@ ul.posts span {
 /* terminal */
 #post pre.terminal {
   border: 1px solid #000;
-  background-color: #333;
+  background-color: #002b36;
   color: #FFF;
 }
 
 #post pre.terminal code {
-  background-color: #333;
+  background-color: #002b36;
+}
+
+.line-data {
+  background-color: #002b36;
+}
+
+.underline {
+  border-bottom: 1px solid black;
+}
+
+.clear {
+  clear: both;
 }

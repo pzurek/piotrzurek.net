@@ -1,0 +1,78 @@
+---
+layout: post
+title: Autodesk takes AutoCAD and Revit cross-platform
+tags:
+- Apple
+- Autodesk
+- Blog entries
+- CAD
+- Linux
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '1'
+---
+<strong>Update: </strong>Most of my speculations in this post turned out to be incorrect. Read more <a href="http://www.piotrzurek.net/2010/05/22/i-was-wrong/">here</a>.
+
+I've had a draft of this blog post lying around since May 2007. When I first started it, it was titled "AutoCAD on alternative platforms". It was mostly my thoughts on why it would be good for everyone involved if Autodesk decided to make AutoCAD run on systems other than Windows. Last week, with release of 2011 line-up of its products, Autodesk has deprecated that blog post.  It no longer is a question if Autodesk is going to offer their main products to customers running "alternative" platforms. Now it is just a question of when is it going to be officially announced. If you can't wait to dump Windows and only AutoCAD/Revit are holding you back, read on and see what the future holds.
+
+<strong>Why do you think Autodesk is working on cross-platform versions of AutoCAD and Revit?
+</strong>A few reasons actually, but one of them leaves no doubt. AutoCAD and Revit 2011 ship with a few core files of the <a href="http://qt.nokia.com/" target="_blank">Qt framework</a><strong>. Qt what?</strong> I recommend you click the <a href="http://qt.nokia.com/" target="_blank">link</a> and read a bit more but long story short it's a library for building user interfaces that runs on wide range of platforms. All the major desktop ones (Windows, Mac Os X and Linux), but also a number of mobile and embedded systems.
+
+<strong>Oh really? How can you tell ?
+</strong>Go to the main application directory of your AutoCAD or Revit 2011 and see if you can find those files: QtCore4.dll, QtGui4.dll and QtXml4.dll. There you go. The core of the Qt framework inside your Autodesk product. What more evidence do you need?
+
+<strong>Seriously? Do they use it already?
+</strong>Seems like they do. Here's an error message that was displayed when I renamed one of those files inside the Revit 2011 installation:
+
+[caption id="attachment_299" align="aligncenter" width="459" caption="Revit error message - Qt library file missing"]<a href="http://www.piotrzurek.net/wp-content/uploads/2010/03/Revit_Qt_error.jpg"><img class="size-full wp-image-299 " title="Revit_Qt_error" src="http://www.piotrzurek.net/wp-content/uploads/2010/03/Revit_Qt_error.jpg" alt="Revit error message - Qt library file missing" width="459" height="171" /></a>[/caption]
+
+<strong>OK, but why does it mean that they *will* release those products on other platforms?</strong>
+
+Because that is the only reason that could justify using Qt. It simply wouldn't make sense to waste time and money to migrate away from native Windows API and not take advantage of what Qt offers. Thanks to using Qt the same code base can be used to build an application running on different platforms, which means reaching new customer base at minimal expense. Seriously, using Qt and not going cross-platforms would be like buying a plane to use it for drag racing instead of flying.
+
+<strong>What do you mean by alternative platforms?
+<span style="font-weight: normal;">Qt can run on pretty much anything that runs on electricity, so possibilities are endless but I think that Autodesk will just dip their toes in cross-platform development by releasing those products on Mac OS X. It already is a reasonably sized market with a high growth rate, so in makes a lot of economic sense. Hopefully, later they'll also decide to go to Linux as well, but I wouldn't hold my breath waiting for that to happen.</span></strong>
+
+<strong>Why wasn't it announced officially?</strong><strong>
+</strong><strong> </strong>I don't know, ask Autodesk. Seriously... go and ask. Call, email, send a pigeon. I guess it just the usual mixture of politics and marketing. The news that Maya 2011 is getting a Qt UI was made official long time ago. I hope that we'll hear more news during the April 19th event but nothing is guaranteed, and even though I would be really disappointed there is a chance that nothing will happen in the 2011 product cycle. We'll see.
+
+<strong>What does it mean in terms of UI look and feel? Is it </strong><strong>going to change a lot?
+</strong>Certainly not in the 2011 cycle since that ship has sailed, but even later not necessarily. It is possible to mix elements of Windows toolkit with parts using Qt framework - Qt widgets can live inside traditional Windows interface and the other way around so the Windows version doesn't have to change in a major way. I expect the Windows versions to evolve around the same concept that Autodesk was trying to get us used to for the last few versions. Fear not, the ribbon is here to stay.
+
+It's a different story on the Mac. Qt hasn't got an equivalent of the ribbon in its toolbox so it will be either replaced by a bit more traditional UI or recreated as a custom widget (which I find hard to believe). With Maya 2011, Autodesk decided to use Qt only on both platforms and it makes a lot of sense if you decide to start from scratch. In case of AutoCAD and Revit both of which have just got nice new interfaces it would be a bit of waste of time and money and in my opinion a step back in terms of visual quality. Below you can see screenshots of the new UI for Maya running on Windows and Mac OS X. I'm not hugely impressed with the result, but for Maya it is probably a step in a good direction. For AutoCAD and Revit that would be a big regress. You shouldn't also judge Qt by what you see below. It is a very flexible and a highly customizable toolkit and the quality of the interface created with it is completely up to the developer.
+
+[caption id="attachment_295" align="aligncenter" width="450" caption="Maya 2011 running on Windows"]<a href="http://www.piotrzurek.net/wp-content/uploads/2010/03/maya2011_whatsnew_referencing_1_large_1400x875.jpg"><img class="size-medium wp-image-295" title="maya2011_whatsnew_referencing_1_large_1400x875" src="http://www.piotrzurek.net/wp-content/uploads/2010/03/maya2011_whatsnew_referencing_1_large_1400x875-450x281.jpg" alt="Maya 2011 running on Windows" width="450" height="281" /></a>[/caption]
+
+[caption id="attachment_293" align="aligncenter" width="450" caption="Maya 2011 running on Mac OS X"]<a href="http://www.piotrzurek.net/wp-content/uploads/2010/03/maya2011_osx_64bit_support_1_large_1400x875.jpg"><img class="size-medium wp-image-293" title="maya2011_osx_64bit_support_1_large_1400x875" src="http://www.piotrzurek.net/wp-content/uploads/2010/03/maya2011_osx_64bit_support_1_large_1400x875-450x281.jpg" alt="Maya 2011 running on Mac OS X" width="450" height="281" /></a>[/caption]
+
+<strong>Is Qt the best solution? Cross-platform vs native?</strong><strong>
+</strong><strong> </strong>Good question. Unfortunately it is quite hard to define <em>best</em>. In a perfect world, without lawyers and accountants, best would mean fully native version of given application on every platform. While not very cost effective, this is the solution that guarantees the best possible integration of the application with surrounding environment. There are some good examples of this approach. Microsoft's own <a href="http://www.boygeniusreport.com/gallery/?gallery=23&amp;pid=295" target="_blank">Office 2011 for Mac OS X</a> is created as a native Cocoa application. As you can see on those leaked screenshots, they have even recreated the ribbon! Mac version of Mindjet's MindManager is also a completely native port, providing Mac users with an interface that provides experience similar to other Mac apps. That would be the best solution in a perfect world but that's not where we are. We already know that Autodesk has gone the Qt way, so let's just hope that their developers do a good job and get the best out of what they have to work with.
+
+<strong>OK. What else?
+</strong>Have a look <a href="http://www.autodesk.com/lgplsource" target="_blank">here</a>. It's a web page that lists all the LGPL libraries that Autodesk is using. Since they chose to use the open source version of Qt they are legally obliged to redistribute the libraries that they use. That page alone wouldn't mean much, since Maya 2011 also has a Qt UI, but we've already established that AutoCAD and Revit 2011 actually include those files in the default installation. It will be interesting to keep an eye on this page and see what other open source software Autodesk is going to use.
+
+<strong>Final words</strong>
+Back in 2007 when I researched the topic of AutoCAD running on Linux and Mac, I was hugely surprised with how aggressively current AutoCAD/Revit users were opposed to the idea of Autodesk bringing those products to other platforms. A lot of CAD "pundits" have been displaying an incredibly hostile attitude claiming that by investing in alternative versions of its products Autodesk would lose focus and the quality and the pace of development would suffer from that. This was a very strange thing to see since it pretty much meant that there is a lot of people that are not really happy with the quality/feature set of Autodesk products but they still use them for some reason while waiting for Autodesk to magically fix them. Some of those opinions sounded so demanding that it was obvious that their authors thought that by buying a product they gain shareholder-like powers and rights. I'm happy that Autodesk seems to have ignored those lunatics.
+
+I really hope that Mac OS X versions of AutoCAD and Revit will be announced soon. I'm pretty sure that majority of Autodesk customers will appreciate the freedom of choice of the system in which they have to work every day. A lot of users that have been running Autodesk products in virtualized environments will be relieved that they don't have to compromise on speed and system integration. For me it means that I'll be one step close to the dream of coming to work and not booting into Windows.
+
+How much confidence do I have in what I have written here? Well, if I had some loose cash lying around I would certainly buy some Autodesk stock. Implications of going cross-platform will certainly sound very optimistic to investors and once it is all officially announced I'm sure the price of Autodesk shares will go up, probably quite a bit.
+
+Oh, one more thing. If you actually know that anything I have written here is wrong, let me know. I'll be happy to either correct it or admit that my predictions have been wrong.
+
+<em><strong>Update:</strong> I have just confirmed that the same set of <strong>Qt</strong> files can be found inside <strong>Inventor 2011</strong> as well. Looks like Autodesk is planning to go cross-platform with the whole product line. I love it. The sooner the better.</em>
+
+<strong>Links:</strong>
+
+Qt framework website: <a href="http://qt.nokia.com" target="_blank">http://qt.nokia.com</a>
+
+Examples of Qt application: <a href="http://qt.nokia.com/qt-in-use/target/desktop">http://qt.nokia.com/qt-in-use/target/desktop</a>
+
+MS Office 2011 for Mac gallery: <a href="http://www.boygeniusreport.com/gallery/?gallery=23&amp;pid=295">http://www.boygeniusreport.com/gallery/?gallery=23&amp;pid=295</a>
+
+Open source libraries used by Autodesk: <a href="http://www.autodesk.com/lgplsource" target="_blank">http://www.autodesk.com/lgplsource</a>
+
+<strong><em>Disclaimer:</em></strong><em>
+All information included in this post comes from publicly available sources and in best case can be considered as bold speculation. I have no privileged or inside information. All opinions expressed here are my own and not those of my employer or Autodesk Inc.</em>

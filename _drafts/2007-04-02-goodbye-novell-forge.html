@@ -1,0 +1,17 @@
+---
+layout: post
+title: Goodbye Novell Forge!
+tags:
+- Blog entries
+- Psycho
+status: publish
+type: post
+published: true
+meta: {}
+---
+On Saturday, I finally managed to migrate Psycho repository from Novell Forge SVN to Google Code SVN. It took a couple of hours and a lot of server errors and so on but it's done and that's what counts. So if you're interested you can check out the source code using that command:
+<code>svn checkout http://psycho.googlecode.com/svn/trunk/ psycho</code>
+
+I've completed that migration using the SVK tool. SVNSYNC somhow didn't want to work for me. The only issue with the final result is that it looks like all commits (all staggering 194 of them :-) ) have been done on the same day. Well, I can live with that. At least I have all the history. I'll probably write a short HowTo for other people who want to get away from Novell Forge and land in Google Code repository.
+
+Since MonoDevelop supports Visual Studio solutions I decided to check in the solution files as well. So now, if you check out the code you'll get the full Visual Studio project that you can easily compile and run. No, I still didn't get my head around an actual build system. I'll worry about that when the application is ready for shipping.

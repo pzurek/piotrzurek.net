@@ -1,0 +1,52 @@
+---
+layout: post
+title: Playing with F#
+tags:
+- Blog entries
+- development
+- F#
+- Functional programming
+- Gtk#
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '1'
+  lightboxoff: 'false'
+---
+This little pretty window:
+
+<img class="aligncenter size-full wp-image-176" title="F# GTK" src="http://www.piotrzurek.net/wp-content/uploads/2008/11/fsgtk.png" alt="" width="180" height="123" />
+
+is a result of this tiny bit of F# code:
+<code>
+#light</code>
+
+open System
+open Gtk
+
+Application.Init()
+
+let window = new Gtk.Window("F# Gtk")
+let vBox = new Gtk.VBox()
+let closeButton = new Gtk.Button()
+let label = new Gtk.Label("Hello World!")
+
+window.WindowPosition &lt; - Gtk.WindowPosition.Center
+window.SetDefaultSize(160, 40)
+window.Destroyed.Add(fun _ -&gt; Application.Quit() )
+
+closeButton.Label &lt; - "Close"
+closeButton.Clicked.Add(fun _ -&gt; Application.Quit() )
+
+vBox.BorderWidth &lt; - (uint32) 6
+vBox.PackStart(label, false, false, (uint32) 6)
+vBox.PackStart(closeButton, false, false, (uint32) 6)
+
+window.Add(vBox)
+window.ShowAll()
+
+<strong>//brown paperbag update: I've missed this line during Copy/Paste</strong>
+Application.Run()
+
+Next step is piece of code that actually does something semi-useful. I'm thinking about implementing a convex hull algorithm which F# seems pretty well suited for.

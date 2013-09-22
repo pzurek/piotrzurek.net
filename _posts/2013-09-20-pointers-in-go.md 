@@ -1,0 +1,50 @@
+---
+layout: post
+title:  "Pointers in Go. Short tale of asterisk and ampersand."
+date:   2013-09-20 21:57:15
+categories: programming go golang
+---
+{% highlight go %}
+package main
+ 
+import "fmt"
+ 
+func main() {
+	var a int
+	var b int
+	var c *int
+ 
+	a = 42
+	b = a
+	c = &a
+ 
+	fmt.Printf("Values:\n a = %v\n b = %v\n c = %v\n*c = %v\n", a, b, c, *c)
+ 
+	a = 21
+ 
+	fmt.Printf("Values:\n a = %v\n b = %v\n c = %v\n*c = %v\n", a, b, c, *c)
+	fmt.Printf("Types:\n a:  %T\n b:  %T\n c: %T\n*c:  %T\n", a, b, c, *c)
+}
+{% endhighlight %}
+
+Output:
+
+{% highlight go %}
+Values:  
+ a = 42  
+ b = 42  
+ c = 0x21015a018  
+*c = 42  
+Values:  
+ a = 21  
+ b = 42  
+ c = 0x21015a018  
+*c = 21  
+Types:  
+ a:  int  
+ b:  int  
+ c: *int  
+*c:  int  
+{% endhighlight %}
+<br/>
+<a href="http://play.golang.org/p/kdwhV55cj8">Run this code at play.golang.org</a><br/>

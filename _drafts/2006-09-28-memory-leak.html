@@ -1,0 +1,12 @@
+---
+layout: post
+title: Memory leak
+tags:
+- Blog entries
+- Psycho
+status: publish
+type: post
+published: true
+meta: {}
+---
+I've got an ugly memory leak somewhere in drawing procedures. At the moment I draw four elements: background, topic frame, topic text and connections between topics. Background is fine - there is not much I could have done wrong there. Topic frames and texts are slow to draw but they are far more responsive then connections. Drawing connections for more then 20 topics takes 30-40 seconds. That's crazy. Any ideas how to hunt that leak down?
