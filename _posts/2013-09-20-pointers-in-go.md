@@ -51,7 +51,7 @@ Values:           // after the initial assignment
  a = 42           // no surprizes here
  b = 42           // exactly what we expect
  c = 0x21015a018  // OK, so that's that an 'address' looks like
-*c = 42           // 'unwraped' or 'unreferenced' value of '*c'
+*c = 42           // 'unwraped' or 'dereferenced' value of '*c'
 Values:           // after the second assignment
  a = 21           // ok, that's to be expected
  b = 42           // ooo... ok, so 'b' is a copy of 'a' stored under different address
