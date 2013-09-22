@@ -47,21 +47,21 @@ func main() {
 When run, the above code will produce to follwing output (without the comments of course):
 
 {% highlight go %}
-Values:           // after the initial assignment:  
+Values:           // after the initial assignment
  a = 42           // no surprizes here
  b = 42           // exactly what we expect
  c = 0x21015a018  // OK, so that's that an 'address' looks like
 *c = 42           // 'unwraped' or 'unreferenced' value of '*c'
-Values after the second assignment:  
+Values:           // after the second assignment
  a = 21           // ok, that's to be expected
  b = 42           // ooo... ok, so 'b' is a copy of 'a' stored under different address
  c = 0x21015a018  // hmmm... and this is the same address that we have seen previously
 *c = 21           // but the value stored under this addres has changed
 Types:            // to ilustrate once more that a pointer is a different type
  a:  int          // than the variable that it points to
- b:  int  
- c: *int  
-*c:  int  
+ b:  int
+ c: *int
+*c:  int
 {% endhighlight %}
 
 Run this code at [play.golang.org][play].
