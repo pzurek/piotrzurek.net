@@ -165,7 +165,7 @@ ul.posts span {
   text-decoration: none;
 }
 
-.site .post-title a:hover {
+.site .post-title:hover {
   color: #2f4d87;
 }
 
@@ -205,6 +205,14 @@ ul.posts span {
 .sketch-outline {
   font-family: "SketchOutline";
   color: lightgray;
+}
+
+.sketch-solid:hover {
+  color: #2f4d87;
+}
+
+.sketch-outline:hover {
+  color: #2f4d87;
 }
 
 /*****************************************************************************/
