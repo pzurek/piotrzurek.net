@@ -1,0 +1,65 @@
+==================================================================
+https://keybase.io/pzurek
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://piotrzurek.net
+  * I am pzurek (https://keybase.io/pzurek) on keybase.
+  * I have a public key with fingerprint 1757 F1FF 0068 4C51 738C  CB34 B4C3 0087 2944 31CD
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "1757f1ff00684c51738ccb34b4c30087294431cd",
+            "host": "keybase.io",
+            "key_id": "b4c30087294431cd",
+            "uid": "f3659f508cb59ea7bb2c915d83692100",
+            "username": "pzurek"
+        },
+        "service": {
+            "hostname": "piotrzurek.net",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1400180880,
+    "expire_in": 157680000,
+    "prev": "a447aeb118fdf2e484ed88f1b99e65767e270b7a70be6cda85c77c01167c671a",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v0.1.14
+Comment: https://keybase.io/crypto
+
+yMHrAnicbZFdSBRrGMdH0+24WruIH92EOV6Esui8s/O5CB6MPiBISCMhY52Pd3Yn
+bWbP7OyuuhliW6cDp9wiOYaEWAq1oXeWqKGpN6KFwclIL/JCqfAkCSclTPCdJe96
+L96X+T+///+Zh2f6wD7MnjLVsXG2/uP5rpTZiY0QVh1yxqO4qMvNuCeKN8Dko6ia
+DxoBQ9VM3IMDlmYVoCgEwXCURAPWzUmS6KZESnITBMeSPEW5gSTjLtyvBy0HihGF
+ICxVdaShD68qI/UXfChZUNwMzSs0wUkizUOBFUVS4gEtc26GJwFBWGAQGppwGSI6
+0BIyYAPe6sKRFlYlpEWTjffqqm4aSaZUgybyBgzd1CW9EdX8phnwWFazOWCxESh6
+f6Z4RVWT0dzIEIZGUNU13AMQKZmqFQsoggAcwXGEC4dNAdWAXtUiaJbhCHSsNjCM
+IgWKYgUoAsApskJCiqOgzHEKEHkeMohmIckSIiugCzKSLHC0xLISAQDDSgwLBNQ/
+CP/QdNzjRr8p+FBkUPVpgokmwlsnJ+rSsBQ7ZktPtTaH2TOce/vU53/DBguMvK2v
+X37Y7/CxtaOLTltPblFv62qsgBzMbpzsIRLF5EqOPev6ejyyU1y4EKku8/pr1mdm
+/+9+37519a8zGHY7/chWyWP200Izvv9VW/qJdztVLf2bh/9OPImNxUbnBrbvvXR0
+1w4NfXdmXvl8yv+g9/TSm0RgrDD6X4XeXlybatws7YuvbP+5Ht6gno/cmMnPaxjg
+pn8P+S4sDa+25fa/WKzJr8jxbJpN8brj/3beSjuW6HpE2Rydvr674/1VczWOsuXh
+19n3K8uzI/+Mfyi65Dg58vBZSQZ58NtA5NqhAsdw+XJaJe/VxKyxUVfOdIcjc2r+
+7Vqw/uJT27mqXRK4D30=
+=CQgP
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/pzurek
+
+==================================================================
