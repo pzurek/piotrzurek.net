@@ -1,3 +1,4 @@
 name: PIOTRZUREK
 pygments: true
 permalink: date
+markdown: kramdown
